@@ -8,7 +8,7 @@ import userImage from "../../assets/images/ayock.jpg";
 
 const NavBar = () => {
   return (
-    <StyledNavBar>
+    <StyledNavBar className="sticky">
       <div className="navbar-wrapper">
         <div className="d-flex align-items-center barIconSearch-wrapper">
           <div className="barsIcon-wrapper d-flex align-items-center justify-content-center me-3">

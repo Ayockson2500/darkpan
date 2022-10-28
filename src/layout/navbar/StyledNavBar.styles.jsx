@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StyledNavBar = styled.div`
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0; 
 
 * {
     margin: 0;
