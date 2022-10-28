@@ -9,14 +9,14 @@ import { BiLogOutCircle } from "react-icons/bi"
 export const sideBarElements = [
     {
         title: 'Dashboard',
-        url: '',
+        url: '/',
         icon: <AiFillDashboard />,
         subMenu: [],
         classNme: "active-menu"
     },
     {
         title: 'Elements',
-        url: '',
+        url: '/elements',
         icon: <MdComputer />,
         subMenu: [ 
             {
@@ -36,35 +36,35 @@ export const sideBarElements = [
     },
     {
         title: 'Widgets',
-        url: '',
+        url: '/widgets',
         icon: <MdWidgets />,
         subMenu: [],
         classNme: ""
     },
     {
         title: 'Forms',
-        url: '',
+        url: '/forms',
         icon: <FaKeyboard />,
         subMenu: [],
         classNme: ""
     },
     {
         title: 'Tables',
-        url: '',
+        url: '/tables',
         icon: <BiTable />,
         subMenu: [],
         classNme: ""
     },
     {
         title: 'Chart',
-        url: '',
+        url: '/charts',
         icon: <FaRegChartBar />,
         subMenu: [],
         classNme: ""
     },
     {
         title: 'Log Out',
-        url: '/',
+        url: '/signin',
         icon: <BiLogOutCircle />,
         subMenu: [],
         classNme: ""
