@@ -6,7 +6,7 @@ const theme = {
         mainLightRedColor: "#82191D",
         mainDarkRedColor: "#4E1B21",
         mainHoverRed: "#BC1212",
-        mainNavyColor: "#416593",
+        mainNavyColor: "#5E7284",
         mainLightColor: "#FFFFFF",
         primaryDarkBg: "#191C24",
         secondaryDarkbg: "#000000",
