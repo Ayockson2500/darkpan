@@ -15,7 +15,10 @@ input:focus {
     border-radius: 5px;
 }
 
-    
+input::-webkit-input-placeholder {
+        color: ${props => props.theme.color.mainNavyColor};
+        font-size: 14px;
+  }  
 `
 
 export default StyledInputField;

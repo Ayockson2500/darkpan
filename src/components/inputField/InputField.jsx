@@ -1,10 +1,10 @@
 import React from 'react'
 import StyledInputField from "./StyledInputField.styles"
 
-const InputField = ({placeholder}) => {
+const InputField = ({placeholder, onChange}) => {
   return (
     <StyledInputField>
-        <input type="text" placeholder={placeholder} />
+        <input type="text" placeholder={placeholder} onChange={onChange} />
     </StyledInputField>
   )
 }
