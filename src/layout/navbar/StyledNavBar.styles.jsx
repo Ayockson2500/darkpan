@@ -10,6 +10,9 @@ export const StyledNavBar = styled.div`
     padding: 0;
     box-sizing: border-box;
 }
+.fs-12 {
+    font-size: 12px;
+}
 .orange-color {
     color: #EB1616;
     cursor: pointer;
@@ -42,7 +45,6 @@ export const StyledNavBar = styled.div`
         background: ${props => props.theme.color.secondaryDarkbg};
         padding: 5px;
         border-radius: 50px;
-        margin-right: 10px;
     }
 .navItem:hover {
         color: ${props => props.theme.color.mainRedColor};
