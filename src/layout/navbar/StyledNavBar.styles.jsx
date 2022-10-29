@@ -51,4 +51,24 @@ export const StyledNavBar = styled.div`
         transition: .5s;
         cursor: pointer;
 }
+.navItem {
+    position: relative;
+}
+.messages-modal {
+    position: absolute;
+    top: 50px;
+    right: 270px;
+}
+.notification-modal {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+.profile-modal {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 120px;
+    padding: 10px 0 20px 0;
+}
 `
