@@ -64,7 +64,7 @@ const StyledSignUp = styled.div`
     .form-check-input:checked {
         background-color: #EB1616;
         border-color: #EB1616;
-}
+   }
 `
 
 export default StyledSignUp;
