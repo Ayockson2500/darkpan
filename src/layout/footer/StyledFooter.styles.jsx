@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
+   font-size: 13px;
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +14,7 @@ const StyledFooter = styled.footer`
         color: #EB1616;
     }
     .navy-color {
-        color:#416593;
+        color: ${props => props.theme.color.mainNavyColor};
     }
 `
 
