@@ -3,7 +3,7 @@ import { StyledMessages } from "./StyledMessages.styles";
 import { Link } from "react-router-dom";
 import { messagesElement } from "./messagesElement";
 
-const Messages = () => {
+const Messages = ({className}) => {
   return (
     <StyledMessages>
       <div className="d-flex align-items-center justify-content-between title-wrapper">

@@ -5,7 +5,7 @@ import InputField from "../../../../components/inputField/InputField";
 import Button from "../../../../module/common/buttons/Button";
 import { MdOutlineClose } from "react-icons/md";
 
-const TodoList = () => {
+const TodoList = ({className}) => {
   const [inputValue, setInputValue] = useState("");
   const [totoItem, setTodoItem] = useState([]);
   const [isActive, setIsActive] = useState(false);
