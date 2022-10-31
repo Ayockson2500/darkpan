@@ -8,17 +8,20 @@ import { Link } from "react-router-dom";
 const BasicForm = () => {
   return (
     <StyledBasicForm>
-      <h3>Basic Form</h3>
+      <p className="title">Basic Form</p>
       <div>
-        <div>
-          <FieldInput label="Email address" />
+        <div className="email-field-wrapper">
+          <FieldInput label="Email address" className='inputField' />
+          <span>We'll never share your email with anyone else.</span>
         </div>
-        <FieldInput label="Password" />
-        <div className="d-flex align-items-cnter">
+        <div>
+          <FieldInput label="Password" className='inputField' />
+        </div>
+        <div className="d-flex align-items-cnter checkbox-wrapper">
           <CheckBox /> <span>Check me Out</span>
         </div>
         <Button>
-          <Link>Sign In</Link>
+          <Link>Sign in</Link>
         </Button>
       </div>
     </StyledBasicForm>
