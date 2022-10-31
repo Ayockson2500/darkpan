@@ -2,6 +2,8 @@ import React from 'react'
 import StyledForms from "./StyledForms.styles"
 import Layout from '../../layout'
 import BasicForm from './basicForms/BasicForm'
+import HorizontalForm from './horizontalForms/HorizontalForm'
+import FloatingLabel from './floatingLabel/FloatingLabel'
 
 const Forms = () => {
   return (
@@ -9,7 +11,10 @@ const Forms = () => {
         <Layout>
           <main className='form-wrapper'>
             <BasicForm />
-            <BasicForm />
+            <HorizontalForm />
+          </main>
+          <main>
+            <FloatingLabel />
           </main>
         </Layout>
     </StyledForms>
