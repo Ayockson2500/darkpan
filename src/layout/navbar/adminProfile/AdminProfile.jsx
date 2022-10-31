@@ -10,7 +10,7 @@ const AdminProfile = () => {
     },
     {
       title: "Settings",
-      url: "/sittings",
+      url: "/settings",
     },
     {
       title: "Log Out",
