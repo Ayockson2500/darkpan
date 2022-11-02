@@ -18,9 +18,10 @@ export const StyleHorizontalForm = styled.div`
             color: ${props => props.theme.color.mainNavyColor};
         }
         .inputField {
-            width: 300px;
+            width: 100%;
             padding: 4px;
             border-radius: 3px;
+            margin-bottom: 0;
         }
         label {
             color: ${props => props.theme.color.mainNavyColor};

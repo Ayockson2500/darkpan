@@ -10,13 +10,17 @@ const HorizontalForm = () => {
     <StyleHorizontalForm>
       <p className="title">Horizontal Form</p>
       <div>
-        <div className="d-flex align-items-cente">
+        <div className="d-flex mb-3">
           <label className="email-label">Email</label>
-          <FieldInput className="inputField" />
+          <div style={{width: "100%"}} className=" ">
+            <FieldInput type="email" className="inputField" />
+          </div>
         </div>
         <div className="d-flex">
           <label className="password-label">Password</label>
-          <FieldInput className="inputField" />
+          <div style={{width: "100%"}} className="">
+            <FieldInput type="password" className="inputField" />
+          </div>
         </div>
         <div className="d-flex">
           <p className="navy-color me-4 fs-14">Radios</p>
