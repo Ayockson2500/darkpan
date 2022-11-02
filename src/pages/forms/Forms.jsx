@@ -4,6 +4,7 @@ import Layout from '../../layout'
 import BasicForm from './basicForms/BasicForm'
 import HorizontalForm from './horizontalForms/HorizontalForm'
 import FloatingLabel from './floatingLabel/FloatingLabel'
+import FileInput from './filesForm/FileInput'
 
 const Forms = () => {
   return (
@@ -13,8 +14,9 @@ const Forms = () => {
             <BasicForm />
             <HorizontalForm />
           </main>
-          <main>
+          <main className='form-wrapper'>
             <FloatingLabel />
+            <FileInput />
           </main>
         </Layout>
     </StyledForms>
