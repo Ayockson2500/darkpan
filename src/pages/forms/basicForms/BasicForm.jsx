@@ -10,11 +10,11 @@ const BasicForm = () => {
     <StyledBasicForm>
       <p className="title">Basic Form</p>
       <div>
-        <div className="email-field-wrapper">
+        <div className="email-field-wrapper ">
           <FieldInput label="Email address" className='inputField' />
           <span>We'll never share your email with anyone else.</span>
         </div>
-        <div>
+        <div className="">
           <FieldInput label="Password" className='inputField' />
         </div>
         <div className="d-flex align-items-cnter checkbox-wrapper">
