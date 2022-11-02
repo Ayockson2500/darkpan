@@ -1,18 +1,22 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
 import { StyledTestimonial } from "./StyledTestimonial.styles";
-import userImage from "../../../assets/images/ayock.jpg";
-// import { customersReview } from "./customersReview";
-// import { useEffect } from "react";
+import { customersReview } from "./customersReview";
 
 const Testimonial = () => {
-//   const [reviews, setReview] = useState(customersReview);
-//   const [counter, setCounter] = useState(0)
+  const reviews = customersReview
+  const [counter, setCounter] = useState(0);
 
-//   const displayClientReview = () => {}
+    const displayClientReview = () => {
+      if (counter > reviews.length-1) {
+        setCounter(counter)
+      }
+      setCounter(counter + 1)
+    }
+
+    setInterval(() => {
+      displayClientReview()
+    }, 5000);
   
-//   useEffect(() => {
-//     [...reviews]
-//   });
 
   return (
     <StyledTestimonial>
@@ -20,15 +24,15 @@ const Testimonial = () => {
       <div className="testimonial-content text-center">
         <img
           className="client-image"
-          src={userImage}
+          src={reviews[counter].picture}
           width="100px"
           height="100px"
           alt=""
         />
-        <h3 className="client-name">Client Name</h3>
-        <p className="client-profession">Profession</p>
+        <h3 className="client-name">{reviews[counter].name}</h3>
+        <p className="client-profession">{reviews[counter].profession}</p>
         <p className="text-content">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, non?
+          {reviews[counter].review}
         </p>
       </div>
     </StyledTestimonial>
