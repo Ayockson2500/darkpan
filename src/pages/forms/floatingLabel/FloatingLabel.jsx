@@ -4,35 +4,35 @@ import { StyledFloatingLabel } from "./StyledFloatingLabel.styles";
 const FloatingLabel = () => {
   return (
     <StyledFloatingLabel>
-      <p className="title">Basic Form</p>
-      <div class="form-floating mb-3">
+      <p className="title mb-2">Floating Label</p>
+      <div class="form-floating mb-3 col-sm-12 col-xl-6">
         <input
           type="email"
           class="form-control"
           id="floatingInput"
           placeholder="name@example.com"
         />
-        <label for="floatingInput">Email address</label>
+        <label htmlFor="floatingInput">Email address</label>
       </div>
-      <div class="form-floating mb-3">
+      <div class="form-floating mb-3 col-sm-12 col-xl-6">
         <input
           type="email"
-          class="form-control"
+          class="form-control form-control-input"
           id="floatingInput"
           placeholder="name@example.com"
         />
-        <label for="floatingInput">Password</label>
+        <label htmlFor="floatingInput">Password</label>
+      </div>
+      <div className="form-floating mb-4 col-sm-12 col-xl-6">
+        <select style={{width: "100%", padding: "20px"}} name="" id="floatingSelect">
+          <option value="">Open this select Menu</option>
+          <option value="">One</option>
+          <option value="">Two</option>
+          <option value="">Three</option>
+        </select>
+        <label htmlFor="floatingSelect">Work with select</label>
       </div>
       <div class="form-floating mb-3">
-        <div className="form-floating mb-3">
-          <select name="" id="floatingSelect">
-            <option value="">Open this select Menu</option>
-            <option value="">One</option>
-            <option value="">Two</option>
-            <option value="">Three</option>
-          </select>
-          <label for="floatingSelect">Work with select</label>
-        </div>
         <textarea
           name=""
           cols="30"
@@ -41,9 +41,9 @@ const FloatingLabel = () => {
           class="form-control"
           id="floatingTextarea"
           placeholder="Leave a comment"
-          style={{height: "150px"}}
+          style={{ height: "150px" }}
         ></textarea>
-        <label for="floatingTextarea">Comments</label>
+        <label htmlFor="floatingTextarea">Comments</label>
       </div>
     </StyledFloatingLabel>
   );
