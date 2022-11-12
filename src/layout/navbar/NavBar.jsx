@@ -14,7 +14,7 @@ const NavBar = () => {
   const [showMessages, setShowMessages] = useState(false);
   const [showNotification, setShowNotification] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
-  console.log(showMessages);
+  // console.log(showMessages);
   return (
     <StyledNavBar className="sticky">
       <div className="navbar-wrapper">
