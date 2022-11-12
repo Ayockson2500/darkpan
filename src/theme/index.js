@@ -10,6 +10,21 @@ const theme = {
         mainLightColor: "#FFFFFF",
         primaryDarkBg: "#191C24",
         secondaryDarkbg: "#000000",
+    },
+    background: {
+        mainAshBg: "#EDEDED",
+        mainHomePageBg: "#000000",
+        mainHompageDarkBg: "#191C24", 
+        mainRedBg: "#EB1616",
+    },
+    fontsize: {
+        fontsize14: "14px",
+        fontsize12: "12px",
+        fontsize16: "16px",
+        fontsize20: "20px"
+    },
+    fontWight: {
+        fontWight70: 700
     }
 };
 
