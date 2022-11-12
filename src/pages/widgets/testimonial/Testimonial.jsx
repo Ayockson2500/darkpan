@@ -3,20 +3,18 @@ import { StyledTestimonial } from "./StyledTestimonial.styles";
 import { customersReview } from "./customersReview";
 
 const Testimonial = () => {
-  const reviews = customersReview
+  const reviews = customersReview;
   const [counter, setCounter] = useState(0);
-
-    const displayClientReview = () => {
-      if (counter > reviews.length-1) {
-        setCounter(counter)
-      }
-      setCounter(counter + 1)
+  const displayClientReview = () => {
+    if (counter > reviews.length-1) {
+      setCounter(counter)
     }
+    setCounter(counter + 1)
+  };
 
-    setInterval(() => {
-      displayClientReview()
-    }, 5000);
-  
+  setInterval(() => {
+    displayClientReview();
+  }, 5000);
 
   return (
     <StyledTestimonial>
@@ -31,9 +29,7 @@ const Testimonial = () => {
         />
         <h3 className="client-name">{reviews[counter].name}</h3>
         <p className="client-profession">{reviews[counter].profession}</p>
-        <p className="text-content">
-          {reviews[counter].review}
-        </p>
+        <p className="text-content">{reviews[counter].review}</p>
       </div>
     </StyledTestimonial>
   );

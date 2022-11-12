@@ -14,7 +14,7 @@ const AdminProfile = () => {
     },
     {
       title: "Log Out",
-      url: "/signin",
+      url: "/",
     },
   ];
 
