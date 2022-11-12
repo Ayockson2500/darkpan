@@ -2,13 +2,24 @@ import React from 'react'
 import StyledLogin from "./StyledLogin.styles"
 import FieldInput from "../../module/common/inputfields/FieldInput";
 import { FaUserEdit } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../../module/common/buttons/Button";
+import data from "../../mockApi.json"
 
 const Login = () => {
+  console.log(data);
+  const navigate = useNavigate()
+
+  const handleLogin = () => {
+    navigate('/dashboard')
+  }
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault()
+  }
   return (
     <StyledLogin>
-      <form>
+      <form onSubmit={handleFormSubmit}>
         <div className="d-flex align-items-center justify-content-between logo-wrapper">
           <div className='d-flex align-items-center'>
             <FaUserEdit className="orange-color me-2" />
@@ -32,7 +43,7 @@ const Login = () => {
             Forget Password
           </Link>
         </div>
-        <Button className="signin-btn light-text">Sign In</Button>
+        <Button onClick={handleLogin} className="signin-btn light-text">Sign In</Button>
         <p className="navy-text text-center fs-14">
         Don't have an Account?{" "}
           <Link to="/signup" className="fs-14">

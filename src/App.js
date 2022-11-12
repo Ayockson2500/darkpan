@@ -5,6 +5,8 @@ import Charts from './pages/charts/Charts'
 import Elements from './pages/elements/Elements'
 import Forms from './pages/forms/Forms'
 import DashBoard from './pages/home/DashBoard'
+import Home from './pages/landingPage/homepage/Home';
+// import MainNavBar from './pages/landingPage/navbar/MainNavBar';
 import Login from './pages/login/Login'
 import Profile from './pages/profile/Profile';
 import Settings from './pages/settings/Settings';
@@ -17,7 +19,8 @@ const App = () => {
     <div>
         <Router>
             <Routes>
-                <Route exact path='/' element={<DashBoard />} />
+                <Route exact path='/' element={<Home />} />
+                <Route exact path='/dashboard' element={<DashBoard />} />
                 <Route exact path='/signup' element={<SignUp />} />
                 <Route exact path='/signin' element={<Login />} />
                 <Route exact path='/charts' element={<Charts />} />

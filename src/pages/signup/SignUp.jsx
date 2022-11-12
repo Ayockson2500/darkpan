@@ -6,9 +6,12 @@ import { Link } from "react-router-dom";
 import Button from "../../module/common/buttons/Button";
 
 const SignUp = () => {
+  const handleFormSubmit = (e) => {
+    e.preventDefault()
+  }
   return (
     <StyledSignUp>
-      <form>
+      <form onSubmit={handleFormSubmit}>
         <div className="d-flex align-items-center justify-content-between logo-wrapper">
           <div className="d-flex align-items-center">
             <FaUserEdit className="orange-color me-2" />
