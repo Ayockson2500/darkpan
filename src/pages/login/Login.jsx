@@ -4,10 +4,13 @@ import FieldInput from "../../module/common/inputfields/FieldInput";
 import { FaUserEdit } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import Button from "../../module/common/buttons/Button";
-import data from "../../mockApi.json"
+// import data from "../../mockApi.json"
+import { useSelector } from 'react-redux';
 
 const Login = () => {
-  console.log(data);
+ const {isLoggin} = useSelector((store) => store.auth)
+ 
+ console.log(isLoggin);
   const navigate = useNavigate()
 
   const handleLogin = () => {
