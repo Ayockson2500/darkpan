@@ -8,9 +8,6 @@ const MainNavBar = ({isSignIn, setIsSignIn}) => {
     console.log(isSignIn);
     const navigate = useNavigate()
 
-    // const handleLogin = () => {
-
-    // }
     if (!isSignIn) {
         setIsSignIn(false)
     } else {
