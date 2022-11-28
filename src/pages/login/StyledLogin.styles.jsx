@@ -43,9 +43,11 @@ const StyledLogin = styled.div`
     .signin-btn {
         width: 100%;
         margin: 20px 0;
+        cursor: pointer;
     }
     .signin-btn:hover {
         background: ${props => props.theme.color.mainHoverRed};
+        /* cursor: pointer; */
     }
     .form-check-input {
         width: 1em;
@@ -63,6 +65,16 @@ const StyledLogin = styled.div`
     .form-check-input:checked {
         background-color: #EB1616;
         border-color: #EB1616;
+}
+.password-field {
+    position: relative;
+}
+.eye-icon {
+    color: ${props => props.theme.color.mainNavyColor};
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
 }
 `
 

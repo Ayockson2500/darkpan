@@ -6,6 +6,7 @@ const StyledMainNavBar = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    border: 2px solid red;
     a {
         text-decoration: none;
         color: ${props => props.theme.color.mainNavyColor};
