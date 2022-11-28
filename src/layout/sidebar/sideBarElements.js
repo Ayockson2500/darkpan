@@ -9,7 +9,7 @@ import { BiLogOutCircle } from "react-icons/bi"
 export const sideBarElements = [
     {
         title: 'Dashboard',
-        url: '/',
+        url: '/dashboard',
         icon: <AiFillDashboard />,
         subMenu: [],
         classNme: "active-menu"

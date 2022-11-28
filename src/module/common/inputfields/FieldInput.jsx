@@ -1,14 +1,16 @@
 import React from "react";
 import { StyledFieldInput } from "./StyledFieldInput.styles";
 
-const FieldInput = ({ type, placeholder, className, label, }) => {
+const FieldInput = ({ type, placeholder, className, value, label, onChange }) => {
   return (
     <StyledFieldInput>
-      <label for="floatingInput">{label}</label>
+      <label htmlFor="floatingInput">{label}</label>
       <input
         type={type}
         placeholder={placeholder}
+        value={value}
         className={className}
+        onChange={onChange}
       />
     </StyledFieldInput>
   );
