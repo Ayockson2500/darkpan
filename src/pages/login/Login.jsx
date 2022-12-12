@@ -2,46 +2,40 @@ import React, { useState } from "react";
 import StyledLogin from "./StyledLogin.styles";
 import FieldInput from "../../module/common/inputfields/FieldInput";
 import { FaUserEdit } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Button from "../../module/common/buttons/Button";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-// import data from "../../mockApi.json"
 import { useSelector } from "react-redux";
-import { toast } from "react-toastify";
 
 const Login = () => {
   const { isLoggin } = useSelector((store) => store.auth);
 
-  console.log(isLoggin);
+  // console.log(isLoggin);
   const [passwordType, setPasswordType] = useState("password");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(true);
-  // const [disabledButton, setDisabledButton] = useState(true);
-
-
-  // require('react-dom');
-  // window.React2 = require('react');
-  // console.log(window.React1 === window.React2);
-
-  const navigate = useNavigate();
+  const [formData, setFormData] = useState({})
+  const [disabledButton, setDisabledButton] = useState(true);
+  
+  const userData = JSON.parse(localStorage.getItem('userData'))
+  console.log(userData);
 
   const handleLogin = () => {
     console.log("click");
   };
 
+  const getInputValue = (value, name) => {
+        const data = {[name]: value}
+        setFormData({...formData, ...data})
+  }
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    if (!email) {
-      // return toast.error('email field can Not be empty!')
-      return toast.error("this title already exist");
-    }
-    navigate("/dashboard")
+    console.log(formData);
   };
 
-  // const handleCheck = () => {
-  //   setDisabledButton(!disabledButton);
-  // };
+  const handleCheck = () => {
+    setDisabledButton(!disabledButton);
+  };
 
   const toggleShowPassword = () => {
     setShowPassword(!showPassword);
@@ -61,17 +55,17 @@ const Login = () => {
         <FieldInput
           placeholder="Email address"
           type="email"
+          name={"email"}
           className="navy-text"
-          onChange={(e) => setEmail({...email, email: e.target.value})}
+          onChange={(e) => getInputValue(e.target.value, e.target.name)}
         />
         <div className="password-field">
           <FieldInput
             placeholder="password"
             type={passwordType ? "password" : "text"}
+            name={"password"}
             className="navy-text"
-            onChange={(e) =>
-              setPassword({ ...password, password: e.target.value })
-            }
+            onChange={(e) => getInputValue(e.target.value, e.target.name)}
           />
           <span onClick={toggleShowPassword} className="eye-icon-wrapper">
             {showPassword ? (
@@ -84,7 +78,7 @@ const Login = () => {
         <div className="d-flex align-items-center justify-content-between">
           <div>
             <input
-              // onChange={handleCheck}
+              onChange={handleCheck}
               type="checkbox"
               className="form-check-input"
             />{" "}
@@ -95,7 +89,7 @@ const Login = () => {
           </Link>
         </div>
         <Button
-          // disabled={disabledButton}
+          disabled={disabledButton}
           onClick={handleLogin}
           className="signin-btn light-text"
         >
