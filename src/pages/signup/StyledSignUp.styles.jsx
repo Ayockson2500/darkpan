@@ -65,6 +65,19 @@ const StyledSignUp = styled.div`
         background-color: #EB1616;
         border-color: #EB1616;
    }
+   .successModal {
+        background: white;
+        position: absolute;
+        z-index: 1000;
+        text-align: center;
+   }
+   .successModal h2 {
+        color: green;
+   }
+   .successModal a {
+        color: #000;
+        text-align: center;
+   }
 `
 
 export default StyledSignUp;

@@ -11,6 +11,6 @@ const authSlice = createSlice({
     reducer: {}
 })
 
-console.log(authSlice);
+// console.log(authSlice);
 
 export default authSlice.reducer
