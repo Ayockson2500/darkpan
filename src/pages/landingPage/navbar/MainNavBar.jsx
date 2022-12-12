@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Button from "../../../module/common/buttons/Button";
 
 const MainNavBar = ({isSignIn, setIsSignIn}) => {
-    console.log(isSignIn);
+    // console.log(isSignIn);
     const navigate = useNavigate()
 
     if (!isSignIn) {

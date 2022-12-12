@@ -15,4 +15,7 @@ export const StyledFieldInput = styled.div`
             border-radius: 2px;
             box-shadow: .1px .1px .5px 5px #4E1B21;
     }
+    .text-red {
+        color: red;
+    }
 `
